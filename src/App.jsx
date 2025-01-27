@@ -3,18 +3,24 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-//*  Components
-import Masthead from "./Components/Masthead";
-import Introduction from "./Components/Introduction";
+//* Components
+import Masthead from "./Components/1 - Masthead";
+import Introduction from "./Components/2 - Introduction";
+import Work from "./Components/3 - Work Experience";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div class="flex flex-col">
-        <Masthead />
-        <div class="p-8 flex items-center justify-center">
-          <Introduction />
+      <div className="flex flex-col items-center justify-center h-screen overflow-auto">
+        {/* Container for all components */}
+        <div className="flex flex-col items-center w-full max-w-screen-md mt-100 p-8 rounded-lg shadow-lg">
+          <Masthead />
+          <div className="my-8 w-full">
+            <Introduction />
+          </div>
+          <Work />
         </div>
       </div>
     </>

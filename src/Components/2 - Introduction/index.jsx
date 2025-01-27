@@ -4,7 +4,7 @@ import ProfPic from "./Profile-Picture.jpg";
 function Introduction() {
   return (
     <>
-      <div className="w-164">
+      <div>
         <div className="wrapper relative flex flex-col ">
           {/* Background with subtle styling */}
 
@@ -20,7 +20,7 @@ function Introduction() {
               src={ProfPic}
               className="rounded-full w-48 h-64 absolute left-12"
               alt="Profile"
-              style={{ zIndex: 10 }}
+              style={{ zIndex: 1 }}
             />
           </div>
 
