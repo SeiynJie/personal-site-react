@@ -3,16 +3,47 @@ function Work() {
     <>
       <div className="w-full h-100 text-white">
         <h1 class="text-left">Work Experience</h1>
-        
+
+        <ExperienceCard
+          media={{
+            type: "video",
+            src: "https://i.imgur.com/XaIBD71.mp4",
+          }}
+          title="Playwright Fastmoss Scraper Demo"
+          description="I utilized cookies to bypass the log in process and used Playwright (which is much faster and has better features than Selenium but I have used Selenium as well) for dynamically loaded sites like this one. I also used asynchronous processing which made things faster and and more efficient than my selenium multithreaded version. Also, made it click some stuff for data that can only be accessed after interacting with stuff."
+        />
+        <ExperienceCard
+          media={{
+            type: "video",
+            src: "https://i.imgur.com/roEsg71.mp4",
+          }}
+          title="Google reCaptcha Audio Bypass"
+          description="This is a project that utilizes OpenAI's Whisper model. Basically what it does is when encountering a reCaptcha: it tries to get an audio version > get the audio file > use Whisper model to transcribe > return the transcribed audio > input the text > bypass captcha. It has a 95% chance of success even while using just the base model. Google's reCaptcha has static and stuff to make it undetectable but this bypasses said feature."
+        />
+        <ExperienceCard
+          media={{
+            type: "video",
+            src: "https://i.imgur.com/5fXRILJ.mp4",
+          }}
+          title="Responsive Web-Design"
+          description="I was just bored. This is when I was practicing Vue."
+        />
         <ExperienceCard
           media={{
             type: "image",
-            src: "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
+            src: "https://creatorspace.imgix.net/users/cliom1y0y01amp501rxau0xmb/O7qR114MnUdsmdbx-image_2024-07-24_184241097.png?w=750&h=750",
           }}
-          title="Das gay"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. "
+          title="Point of Contact Specialist - Team Leader at NBCN"
+          description="Deals with recording data (data entry), data analysis, and back-office work. Lead generation is the most important part of this job as it requires getting the contact information of creators. I have also created workflows for the whole department"
         />
-
+        <ExperienceCard
+          media={{
+            type: "video",
+            src: "https://i.imgur.com/DvPApoD.mp4",
+          }}
+          title="EngagementX: Social Media Bot"
+          description="A project I made when I was working with a client. He requested that I make an all-around social media bot that can do. There are a ton of needs for social media engagement and it's very hard to do this especially if your time is limited. EngagementX fixes that for you! With the ability to: Run manual interaction, AI Auto-replying, Create flows (drag and drop feature), See results of performed actions on the dashboard"
+        />
       </div>
     </>
   );
@@ -20,17 +51,17 @@ function Work() {
 
 function ExperienceCard({ media, title, description }) {
   return (
-    <div className="relative h-72 w-full rounded-2xl group">
+    <div className="relative h-92 w-full rounded-2xl group mb-5">
       {/* Blurred Background */}
-      <div className="absolute inset-0 -z-10 rounded-2xl bg-[hsl(276,100%,60%)] w-full h-full [filter:blur(4rem)] opacity-0 group-hover:opacity-100"></div>
+      <div className="absolute inset-0 -z-10 rounded-2xl bg-[hsl(276,100%,60%)] w-full h-full [filter:blur(4rem)] opacity-40 group-hover:opacity-100"></div>
 
       {/* Card Content */}
       <div className="duration-500 cursor-pointer overflow-hidden relative text-gray-50 h-full w-full rounded-2xl hover:duration-700">
         {/* Media Section */}
-        <div className="h-72 w-full relative z-0">
+        <div className="h-92 w-full relative z-0">
           {media?.type === "image" && (
             <img
-              src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+              src={media.src}
               alt={title}
               className="h-full w-full object-cover"
             />
@@ -88,7 +119,7 @@ function ExperienceCard({ media, title, description }) {
             color: "hsl(260, 30%, 90%)",
           }}
         >
-          <span className="font-bold text-xs uppercase mb-6 text-neutral-400">
+          <span className="font-bold text-xs uppercase mb-3 text-neutral-400">
             Hover over me uWu
           </span>
           <span className="font-bold text-3xl">{title}</span>
