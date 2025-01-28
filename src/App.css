@@ -5,9 +5,30 @@
   text-align: center;
 }
 
-
-body{
+body {
   background-color: #11071f;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: hsl(260, 60%, 50%) hsl(260, 30%, 15%);
+}
+
+/* Custom Scrollbar for WebKit Browsers */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: hsl(260, 30%, 15%); /* Dark purple background for track */
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(hsl(260, 60%, 50%), hsl(260, 60%, 40%)); /* Gradient thumb */
+  border-radius: 8px;
+  border: 2px solid hsl(260, 30%, 15%); /* Matches the track background */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(hsl(260, 60%, 55%), hsl(260, 60%, 45%)); /* Lighter gradient on hover */
 }
 
 .logo {

@@ -17,7 +17,7 @@ function App() {
         {/* Container for all components */}
         <div className="flex flex-col items-center w-full max-w-screen-md mt-100 p-8 rounded-lg shadow-lg">
           <Masthead />
-          <div className="my-8 w-full">
+          <div className="w-full mt-50 mb-25">
             <Introduction />
           </div>
           <Work />
