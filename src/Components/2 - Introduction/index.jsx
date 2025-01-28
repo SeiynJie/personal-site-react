@@ -4,7 +4,7 @@ import ProfPic from "./Profile-Picture.jpg";
 function Introduction() {
   return (
     <>
-      <div>
+      <div className="h-full">
         <div className="wrapper relative flex flex-col ">
           {/* Background with subtle styling */}
 

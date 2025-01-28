@@ -15,15 +15,15 @@ function App() {
   return (
     <>
       <div className="flex flex-col items-center justify-center h-screen overflow-auto">
+        <Masthead />
         {/* Container for all components */}
-        <div className="flex flex-col items-center w-full max-w-screen-md mt-100 p-8 rounded-lg shadow-lg">
-          <Masthead />
-          <div className="w-full mt-50 mb-25">
+        <div className="flex flex-col items-center w-full max-w-screen-md mt-150 p-8 rounded-lg shadow-lg">
+          <div className="w-full h-full mt-500 mb-25">
             <Introduction />
           </div>
           <Work />
+          <CodingStory/>
         </div>
-        <CodingStory/>
       </div>
     </>
   );
