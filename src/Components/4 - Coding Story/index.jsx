@@ -1,17 +1,24 @@
 function CodingStory() {
   const timelineItems = [
     {
-      title: "Order Placed",
-      date: "08/06/2023",
+      title: "The Beginning",
+      date: "01/01/2021",
       description:
-        "Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum morbi blandit cursus risus.",
+        "Where it all started: I was busy playing roblox games but then, I encountered ROBLOX HACKING. I got interested and searched how to do this and this is what enticed me to start my coding journey. \nIt was very confusing... so I stopped after a few days",
       type: "normal",
     },
     {
-      title: "Delivered",
-      date: "Exp. 12/08/2023",
+      title: "The Continuation",
+      date: "Around March 2021",
       description:
-        "Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum morbi blandit cursus risus.",
+        "I was determined to start this again and learn how to code on my own, even if it will be incredibly difficult. \nI started researching, trying to learn what my first step should be. And once again... I failed.\nDisappointed, I stepped back from it again and focused on other things like Choir.",
+      type: "normal",
+    },
+    {
+      title: "The Reawakening",
+      date: "May 2022",
+      description:
+        "I tried putting my hands back on the wheel and try again, this time, without giving up no matter how hard and confusing it gets. FINALLY! I was able to start, though it was rough.\n I started following tutorials",
       type: "important",
     },
   ];
@@ -30,6 +37,7 @@ function TimelineItem({ title, date, description, type }) {
     const isImportant = type === "important";
     return (
       <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+        {/* For the green check sign or the important one */}
         <div
           className={`flex items-center justify-center w-10 h-10 rounded-full border border-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 ${
             isImportant
@@ -64,16 +72,21 @@ function TimelineItem({ title, date, description, type }) {
               {date}
             </time>
           </div>
-          <div className="text-slate-500">{description}</div>
+          <div className="text-slate-500">
+            {description.split("\n").map((line, index) => (
+              <div className="mt-3" key={index}>{line}</div>
+            ))}
+          </div>
         </div>
       </div>
     );
   }
-  
+    
 
 function CodingTimeline({ items }) {
   return (
-    <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+    // For the time LINE, edit the via-fuschia-500 property to change the color
+    <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-fuchsia-500 before:to-transparent">
       {items.map((item, index) => (
         <TimelineItem
           key={index}

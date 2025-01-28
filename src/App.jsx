@@ -14,10 +14,10 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-screen overflow-auto">
-        <Masthead />
+      <Masthead />
+      <div className="flex flex-col items-center justify-center h-screen overflow-y-scroll">
         {/* Container for all components */}
-        <div className="flex flex-col items-center w-full max-w-screen-md mt-150 p-8 rounded-lg shadow-lg">
+        <div className="flex flex-col items-center w-full max-w-screen-md mt-120 p-8 rounded-lg shadow-lg">
           <div className="w-full h-full mt-500 mb-25">
             <Introduction />
           </div>
