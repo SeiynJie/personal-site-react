@@ -2,7 +2,7 @@ function Work() {
   return (
     <>
       <div className="w-full h-full text-white mb-25">
-        <h1 class="text-left">Work Experience</h1>
+        <h1 class="text-right">Work Experience</h1>
 
         <ExperienceCard
           media={{

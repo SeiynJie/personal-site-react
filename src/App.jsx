@@ -8,6 +8,7 @@ import Masthead from "./Components/1 - Masthead";
 import Introduction from "./Components/2 - Introduction";
 import Work from "./Components/3 - Work Experience";
 import CodingStory from "./Components/4 - Coding Story";
+import Hobbies from "./Components/5 - Hobbies";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,7 @@ function App() {
 
           <Work />
           <CodingStory />
+          <Hobbies/>
         </div>
       </div>
     </>
