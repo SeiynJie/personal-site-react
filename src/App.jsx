@@ -9,6 +9,7 @@ import Introduction from "./Components/2 - Introduction";
 import Work from "./Components/3 - Work Experience";
 import CodingStory from "./Components/4 - Coding Story";
 import Hobbies from "./Components/5 - Hobbies";
+import Contact from "./Components/6 - Contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,15 +24,18 @@ function App() {
         {/* Content container */}
         <div className="flex flex-col items-center w-full max-w-screen-md p-8 rounded-lg shadow-lg">
           {/* Removed extreme margins and fixed spacing */}
-          <div className="w-full mt-16 mb-32">
+          <div className="w-full mt-16 mb-54">
             <Introduction />
           </div>
 
+          <Separator/>
           <Work />
           <Separator/>
           <CodingStory />
           <Separator/>
           <Hobbies/>
+          <Separator/>
+          <Contact/>
         </div>
       </div>
     </>

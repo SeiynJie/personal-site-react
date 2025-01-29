@@ -4,7 +4,7 @@ import workout from "./Workout.png";
 function Hobbies() {
   return (
     <>
-      <div className="w-full h-full text-white mb-25">
+      <div className="w-full h-full text-white">
         <h1 className="text-white text-right">Hobbies</h1>
         <HobbyCard
           title="Piano"
@@ -59,7 +59,7 @@ function HobbyCard({
     <div className="relative my-16 group">
       <div className="absolute inset-0 -z-10 rounded-2xl bg-[hsla(171,100%,50%,1)] w-full h-full [filter:blur(4rem)] opacity-40 group-hover:opacity-100"></div>
 
-      <div className="w-[calc(100%_-_3rem)] mx-auto max-w-lg lg:max-w-5xl xl:max-w-7xl bg-[#2A004E] rounded-4xl p-15 group-hover:rotate-[-3deg] transition-all duration-200" >
+      <div className="w-[calc(100%_-_3rem)] mx-auto max-w-lg lg:max-w-5xl xl:max-w-7xl bg-[#2A004E] rounded-4xl p-15 group-hover:rotate-[-3deg]" >
         <div className="grid grid-cols-12 gap-y-8 lg:gap-8 items-center">
           {/* Content Section */}
           <div
