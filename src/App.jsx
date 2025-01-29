@@ -28,12 +28,22 @@ function App() {
           </div>
 
           <Work />
+          <Separator/>
           <CodingStory />
+          <Separator/>
           <Hobbies/>
         </div>
       </div>
     </>
   );
+}
+
+function Separator(){
+  return(
+    <>
+    <hr className="w-full my-16 border-t-2 border-gray-300 dark:border-gray-700" />
+    </>
+  )
 }
 
 export default App;

@@ -1,7 +1,7 @@
 function Work() {
   return (
     <>
-      <div className="w-full h-full text-white mb-25">
+      <div className="w-full h-full text-white">
         <h1 class="text-right">Work Experience</h1>
 
         <ExperienceCard

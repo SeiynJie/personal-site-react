@@ -5,10 +5,14 @@
   text-align: center;
 }
 
-body {
-  background-color: #11071f;
+html{
+  overflow-y: auto; /* Ensures the scrollbar appears */
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: hsl(260, 60%, 50%) hsl(260, 30%, 15%);
+}
+
+body {
+  background-color: #11071f;
 }
 
 /* Custom Scrollbar for WebKit Browsers */
