@@ -14,15 +14,20 @@ function App() {
 
   return (
     <>
+      {/* The masthead is in front with a high z-index, doesn't affect stuff below. */}
       <Masthead />
-      <div className="flex flex-col items-center justify-center h-screen overflow-y-scroll">
-        {/* Container for all components */}
-        <div className="flex flex-col items-center w-full max-w-screen-md mt-120 p-8 rounded-lg shadow-lg">
-          <div className="w-full h-full mt-500 mb-25">
+
+      {/* Main container with proper height and scroll behavior */}
+      <div className="flex flex-col items-center justify-center min-h-screen overflow-y-auto">
+        {/* Content container */}
+        <div className="flex flex-col items-center w-full max-w-screen-md p-8 rounded-lg shadow-lg">
+          {/* Removed extreme margins and fixed spacing */}
+          <div className="w-full mt-16 mb-32">
             <Introduction />
           </div>
+
           <Work />
-          <CodingStory/>
+          <CodingStory />
         </div>
       </div>
     </>
