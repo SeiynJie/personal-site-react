@@ -9,6 +9,7 @@ html{
   overflow-y: auto; /* Ensures the scrollbar appears */
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: hsl(260, 60%, 50%) hsl(260, 30%, 15%);
+  scroll-behavior: smooth;
 }
 
 body {

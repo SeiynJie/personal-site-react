@@ -4,7 +4,7 @@ import workout from "./Workout.png";
 function Hobbies() {
   return (
     <>
-      <div className="w-full h-full text-white">
+      <div className="w-full h-full text-white" id="hobbies">
         <h1 className="text-white text-right">Hobbies</h1>
         <HobbyCard
           title="Piano"

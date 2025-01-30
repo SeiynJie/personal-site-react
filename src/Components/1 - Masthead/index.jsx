@@ -11,19 +11,19 @@ function Masthead() {
       <a href="" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
         Home
       </a>
-      <a href="" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
+      <a href="#introduction" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
         About
       </a>
-      <a href="" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
+      <a href="#workExperience" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
         Work Experience
       </a>
-      <a href="" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
+      <a href="#codingStory" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
         Coding Story
       </a>
-      <a href="" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
+      <a href="#hobbies" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
         Hobbies
       </a>
-      <a href="" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
+      <a href="#contact" className="hover:bg-[hsl(265,80%,35%)] rounded px-3 py-2">
         Contact
       </a>
     </div>

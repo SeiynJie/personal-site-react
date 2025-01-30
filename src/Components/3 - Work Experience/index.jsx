@@ -34,7 +34,7 @@ function Work() {
 
   return (
     <>
-      <div className="w-full h-full text-white" ref={main}>
+      <div className="w-full h-full text-white" ref={main} id="workExperience">
         <h1 class="text-right">Work Experience</h1>
 
         <ExperienceCard

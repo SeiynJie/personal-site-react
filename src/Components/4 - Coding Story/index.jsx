@@ -102,7 +102,7 @@ function CodingStory() {
   
   return (
     <>
-      <div className="w-full h-full gap-10 text-white">
+      <div className="w-full h-full gap-10 text-white" id="codingStory">
         <h1 class="text-left">Coding Story</h1>
         <CodingTimeline items={timelineItems} />
       </div>

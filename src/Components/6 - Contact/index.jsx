@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <>
-      <div className="w-full h-full text-white">
+      <div className="w-full h-full text-white" id="contact">
         <h1>Contact</h1>
 
         <div className="flex justify-center items-center gap-4 mt-10">

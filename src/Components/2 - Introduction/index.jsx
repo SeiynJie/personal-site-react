@@ -76,7 +76,7 @@ function Introduction() {
 
   return (
     <>
-      <div className="h-full">
+      <div className="h-full" id="introduction">
         <div className="wrapper relative flex flex-col ">
           {/* Background with subtle styling */}
 
