@@ -1,4 +1,8 @@
 # Personal Website
+Video below has audio
+
+https://github.com/user-attachments/assets/447ede7c-8e9e-41df-8043-fe003b5f00a8
+
 
 This is a personal website built with React, Tailwind V4, and GSAP animation library for my **ITE 399 Final Project - January 31, 2025**
 ![alt text](./ReadMe%20Images/image-2.png)
