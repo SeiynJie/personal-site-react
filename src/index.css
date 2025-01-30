@@ -135,4 +135,9 @@ h1 {
     text-decoration: underline;
     color: hsl(288, 97%, 61%);
   }
+
+  /** For the work experience cards */
+  .card {
+    scroll-snap-type: y mandatory;
+  }
 }

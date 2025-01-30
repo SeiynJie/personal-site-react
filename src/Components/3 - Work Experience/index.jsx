@@ -84,7 +84,7 @@ function Work() {
 
 function ExperienceCard({ media, title, description }) {
   return (
-    <div className="relative h-92 w-full rounded-2xl group mb-5 card">
+    <div className="relative h-92 w-full rounded-2xl group mb-5 card snap-start">
       {/* Blurred Background */}
       <div className="absolute inset-0 -z-10 rounded-2xl bg-[hsl(276,100%,60%)] w-full h-full [filter:blur(4rem)] opacity-40 group-hover:opacity-100"></div>
 
