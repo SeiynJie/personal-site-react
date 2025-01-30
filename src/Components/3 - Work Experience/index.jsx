@@ -1,7 +1,40 @@
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
+
 function Work() {
+  const main = useRef();
+
+  useGSAP(() => {
+    const cards = document.querySelectorAll('.card');
+
+    // Loop through each card and apply the GSAP animation
+    cards.forEach((card) => {
+      gsap.fromTo(
+        card,
+        { scale: 0.7, opacity: 0 }, // Initial scale and opacity
+        {
+          scale: 1.1,
+          opacity: 1,
+          duration: 0.5,
+          scrollTrigger: {
+            trigger: card, // Trigger animation for each card
+            start: "top 150%", // Trigger animation when the card is 50% from the top
+            end: "bottom top", // End when the card is out of the viewport
+            scrub: true, // Smoothly animate as you scroll
+            toggleActions: "play none none none", // Play animation once on scroll
+          },
+        }
+      );
+    });
+  });
+
   return (
     <>
-      <div className="w-full h-full text-white">
+      <div className="w-full h-full text-white" ref={main}>
         <h1 class="text-right">Work Experience</h1>
 
         <ExperienceCard
@@ -51,7 +84,7 @@ function Work() {
 
 function ExperienceCard({ media, title, description }) {
   return (
-    <div className="relative h-92 w-full rounded-2xl group mb-5">
+    <div className="relative h-92 w-full rounded-2xl group mb-5 card">
       {/* Blurred Background */}
       <div className="absolute inset-0 -z-10 rounded-2xl bg-[hsl(276,100%,60%)] w-full h-full [filter:blur(4rem)] opacity-40 group-hover:opacity-100"></div>
 
