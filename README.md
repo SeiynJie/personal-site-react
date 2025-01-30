@@ -1,6 +1,7 @@
 # Personal Website
 
 This is a personal website built with React, Tailwind V4, and GSAP animation library for my **ITE 399 Final Project - January 31, 2025**
+![alt text](./ReadMe%20Images/image-2.png)
 
 ## Technologies Used
 - React
